@@ -1,6 +1,10 @@
+@import url('https://fonts.cdnfonts.com/css/digital-7-mono');
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Digital-7', sans-serif;
+    font-size: 25px;
 }
 
 body {
@@ -10,6 +14,7 @@ body {
     height: 100%;
     align-content: center;
     background-image: url("./img/bg.jpg");
+    background-size: 100%;
 }
 
 table {
@@ -28,49 +33,58 @@ td, th {
 .cell button {
     width: 100%;
     height: 100%;
-    padding: 20px;
+    padding: 20px 15PX;
     margin: 0;
-    color: #fff;
-    background-color: #4A90E2;
-    border: 0;
+    color: #6ad9e7;
+    background-color: rgba(119, 119, 119, 0.877);
+    border: 1px solid #0000008e;
     border-radius: 12px;
 }
 
 .container {
         margin-top: 200px;
-        background-color: #73abec;
+        /* background-color: #73abec; */
         padding: 15px;
+        border: 1px solid #292929;
         border-radius: 20px;
-
-}
-
-.add-btn button{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
+        display: fixed;
+        box-shadow: 0 4px 8px 0 rgb(110 208 255 / 20%), 0 6px 20px 0 rgba(110, 209, 255, 0.493);
+        background-image: url("./img/metal.jpg");
 }
 
 #display {
     height: 70px;
-    width: 99%;
-    border: 2px solid #000;
+    width: 97%;
+    margin-left: 4px;
+    margin-top: 10px;
+    border: 2px solid rgba(88, 88, 88, 0.767);
+    border-radius: 10px;
     box-shadow: 10px;
     margin-bottom: 10px;
-}
-
-.red-btn button{
-    background-color: rgb(255, 159, 49);
+    background-color: #000000ce;
+    color: cornflowerblue;
+    text-align: right;
+    font-size: 40px;
+    padding-right: 10px;
 }
 
 .cell button:hover {
-    background-color: #4a82c2;
+    background-color: rgb(128, 128, 128);
+    color: #ffffff;
 }
 
 .cell button:active {
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
+    transform: translateY(1px);
+    box-shadow: 0 3px 10px rgba(206, 245, 255, 0.2);
 }
 
-.red-btn button:hover {
-    background-color: rgb(255, 136, 0);
+.equal-btn button {
+    background-color: rgb(224, 116, 116);
+    color: #fff;
+
+}
+
+.equal-btn button:hover {
+    background-color: rgb(233, 107, 107);
 }
